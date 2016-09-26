@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	unsigned int sum=2;
+	int prime,i;
+	for(prime=3;prime<=2000000;prime++)
+		for(i=2;;i++)
+		{
+			if(prime%i==0)
+			{
+				break;				
+			}
+			else if(i==(prime-1))
+			{				
+				sum=sum+prime;
+				printf("%u\n",sum);
+				break;
+			}
+		}
+	printf("%d",sum);
+}
